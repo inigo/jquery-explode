@@ -1,0 +1,33 @@
+<html>
+<head>
+<script type="text/javascript" src="lib/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="jquery-explode-1.0.0.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".move").click( function() { $.explode( { transition : "5s" } ) } );
+});
+</script>
+<style type="text/css">
+.bluefish {
+    background: blue;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.redfish {
+    background: red;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+</style>
+</head>
+<body>
+    <div class="move bluefish" style="left: 50px; top: 50px"> </div>
+    <div class="move bluefish" style="left: 200px; top: 400px"> </div>
+    <div class="move bluefish" style="left: 400px; top: 600px"> </div>
+    <div class="move redfish" style="left: 300px; top: 100px"> </div>
+    <div class="move redfish" style="left: 50px; top: 500px"> </div>
+</body>
+</html>
